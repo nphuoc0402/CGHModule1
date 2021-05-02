@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <form action="" gmethod="GET">
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+        <input type="submit"  value="Submid"><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <input type="checkbox" id="other"name="gender" value="bisexual">
+        <label for="other">bisexual</label><br>
+        <label for="car">Choose a car</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+        </datalist><br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor"><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity"><br>
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+      
+        <!-- <textarea name="message"style="width:200px; height:600px;"></textarea> -->
+        <input type="submit" value="Submit">
+        <button type="button" onclick="alert('Hello World! Have a good day')">Click Me!</button><br>
+    
+    </form>
+</body>
+</html>

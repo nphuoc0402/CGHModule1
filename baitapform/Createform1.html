@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐĂNG Ký HỌC VIÊN</title>
+    <link rel="stylesheet" type="text/css" href="Createform1.css">
+</head>
+<body>
+    
+    <form action="" method="POST">
+        <h1>Đăng Ký Học Viên</h1>
+        <div>
+            <label for="name">Họ và tên</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="birthday">Ngày sinh</label>
+            <input type="date" name="birthday">
+        </div>
+        <div>
+            <label for="gender">Giới tính</label>
+            <input type="radio" name="gender">Nam
+            <input type="radio" name="gender">Nữ
+        </div>
+        <div>
+            <label for="address">Địa chỉ</label>
+            <input type="text" name="address" id="address" ></input>
+        </div>
+        <div>
+            <label for="class">Lớp</label>
+            <select name="class" >
+                <option value="none">--Chọn Lớp--</option>
+                <option value="9A1">9A1</option>
+                <option value="9A2">9A2</option>
+                <option value="9A3">9A3</option>
+                <option value="9A4">9A4</option>
+                <option value="9A5">9A5</option>
+            </select>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="phone">Điện Thoại</label>
+            <input type="number" name="phone">
+        </div>
+        <div>
+            <input type="submit" value="Đăng ký" id="button">
+            <input type="reset" value="Nhập Lại" id="button">
+        </div>
+    </form>
+
+</body>
+</html>

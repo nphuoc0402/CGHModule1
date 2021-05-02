@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+form div{
+    margin-bottom: 10px;
+} 
+label{
+    font-weight: bold;
+    line-height: 20px;
+    float:left;
+}
+#name{
+    margin-left: 13px;
+
+}
+form{
+    display: inline-block;
+    width: 500px;
+    border: 1px solid black;
+    background-color: yellow;
+    margin: 10px 120px;
+    padding: 5px 0px 0px 20px;
+}
+[name="birthday"]{
+    margin-left: 9px;
+}
+h1{
+    color: blue;
+    background-color: rgb(1, 255, 170);
+    margin: 5px 10px 20px 10px;
+}
+
+#address{
+    margin-left: 31px;
+}
+[type="radio"]{
+    margin-left:24px ;
+}
+[name="class"]{
+    margin-left: 52px;
+}
+#email{
+    margin-left: 39px;
+}
+#button {
+    position:static;
+    display: flexbox;
+    margin-left: 40px;
+}
+#address{
+    width: 150px;
+    height: 50px
+}
