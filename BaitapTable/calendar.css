@@ -1,0 +1,94 @@
+body{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+body::before{
+    content:"";
+    width: 120vw;
+    position: absolute;
+    top: -100px;
+    left: -20px;
+    bottom: 0;
+    right: 0;
+    filter:blur(10px);
+    background:inherit;
+}
+h1{
+    
+    color: blue;
+    text-align: center;
+    display: contents;
+    margin: 10px 5px 0px 10px;
+}
+.calendar{
+    position: absolute;
+    width: 700px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px black;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+.calendar_date{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25px,1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.calendar_day{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-weight: 600;
+    color:black;
+}
+.calendar_day tr td:nth-child(7){
+    color:blue
+}
+.calendar_day tr td:nth-child(1){
+    color:red;
+}
+thead tr th:nth-child(7){
+    color:#fff ;  
+    background-color: blue;
+    
+}
+thead tr th:nth-child(1){
+    color:#fff ;  
+    background-color:red;
+    
+}
+
+table{
+    border-spacing: 1px;
+}
+thead tr th{
+   margin: 5px 0px 5px 10px;
+    border: 1px solid black;
+    width: 500px;
+    font-size: 10px;
+    align-items: center;
+    padding: 4px;
+    background-color:orange;
+    color: white;
+    
+}
+tbody tr td{
+    
+     border: 1px solid black;
+     width: 500px;
+     height: 30px;
+     align-items: center;
+ }
+ tr sub{
+     color:black;
+ }
