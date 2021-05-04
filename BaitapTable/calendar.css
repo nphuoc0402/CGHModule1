@@ -92,3 +92,12 @@ tbody tr td{
  tr sub{
      color:black;
  }
+ .calendar_cell tr td:nth-child(7){
+    color:blue
+}
+.calendar_cell tr td:nth-child(1){
+    color:red;
+}
+.calendar_cell{
+    border-collapse: collapse;
+}
