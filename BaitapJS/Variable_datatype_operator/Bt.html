@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let VL = prompt ("Enter the score of Physical");
+        let H  = prompt ("Enter the score of Chemistry");
+        let S  = prompt ("Enter the score of Biology");
+        VL = parseInt (VL);
+        H = parseInt (H);
+        S = parseInt (S);
+        let sum = VL + H + S;
+        let average = (sum/3);
+        
+        alert("Sum =" + sum + " ," +  "Average = " + average.toFixed(2));
+        document.write("Sum =" + sum + " ," +  "Average = " + average.toFixed(2) + "<br>");
+        let temperature = prompt ("Enter the temperature");
+        let F = ((temperature/5)*9 +32);
+        F = F.toFixed(2);
+        alert ("F = " + F + "°F");
+        document.write("F = " + F + "°F" + "<br>");
+        const pi=3.14;
+        let R = prompt("Enter the radius");
+        let perimeter = 2*R*pi;
+        let area = pi*R*R;
+        alert("Perimeter = " + perimeter.toFixed(2) + " " + "area = " + area.toFixed(2));
+        document.write("Perimeter = " + perimeter.toFixed(2) + ", " + "Area = " + area.toFixed(2))
+        
+        
+        </script>
+</body>
+</html>
