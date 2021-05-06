@@ -1,11 +1,7 @@
-let diem = prompt ("Nhap diem");
-diem = parseInt (diem);
-diem = diem.toFixed(0);
-switch(diem){
-    case "1":
-    case "2":
-    case "3":
-    case "4":
+let diem = (prompt ("Nhap diem"));
+
+switch((diem <=10)? ((diem >=9)? "9": (diem >=8)? "8" : (diem >=7)? "7" : (diem>=6)? "6": (diem>=0)? "5": "null") : "null"){
+    
     case "5":
         alert("Yếu");
         break;
@@ -22,6 +18,6 @@ switch(diem){
         alert("Xuất Sắc");
         break;
     default:
-        alert("Gia tri khong hop le");
+        alert("Giá trị không hợp lệ!");
         break;
 }
