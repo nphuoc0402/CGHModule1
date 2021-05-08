@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:skyblue;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 200px;
+            margin: 50px 0px 0px 50px;
+            height: auto;
+            background-color:gray;
+            border: 1px solid black;
+            box-shadow: 5px 5px 10px #b6a9a9,inset -5px -5px -10px #ffffff;
+            padding: 15px;
+            
+        }
+        [type=text]{
+            border:none;
+            /* outline:none; */
+            color: black;
+            width: 100%;
+            height: 25px;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top:20px;
+            text-align: right;
+            box-shadow: 2px 2px 5px #babecc,inset -5px -5px -10px #ffffff;
+            
+        }
+        [type=button]{
+            width: 37px;
+            padding:8px;
+            font-size:15px;
+            font-weight:bold;
+            margin-right: 2px;
+            outline: none;
+            cursor: default;
+            box-shadow: 5px 5px 10px #b6acac, -5px -5px 10px #faf4f4;
+            display: inline-block;
+            
+            
+        }
+        [type=button]:hover{
+            background-color:gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form name="cal">
+            <input type="text" id="display" placeholder="0" readonly ><br><br>
+            <input type="button" value="1" onclick="view('1')">
+            <input type="button" value="2" onclick ="view('2')">
+            <input type="button" value="3" onclick="view('3')">
+            <input type="button" value="+" onclick="view('+')">
+            <br><br>
+            <input type="button" value="4" onclick="view('4')">
+            <input type="button" value="5" onclick="view('5')">
+            <input type="button" value="6" onclick="view('6')">
+            <input type="button" value="-" onclick="view('-')">
+            <br><br>
+            <input type="button" value="7" onclick="view('7')">
+            <input type="button" value="8" onclick="view('8')">
+            <input type="button" value="9" onclick="view('9')">
+            <input type="button" value="*" onclick="view('*')">
+            <br><br>
+            <input type="button" value="C" onclick="clearnum()">
+            <input type="button" value="0" onclick="view('0')">
+            <input type="button" value="=" onclick="calculat()">
+            <input type="button" value="/" onclick="view('/')">
+
+
+        </form>
+    </div>
+    <script src="calculatorad.js"></script>
+</body>
+</html>
