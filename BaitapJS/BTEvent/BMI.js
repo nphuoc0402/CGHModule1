@@ -13,7 +13,7 @@ function checkbmi(){
       document.getElementById('ketqua').innerText=("Normal");
    else if (bmi < 30.0)
       document.getElementById('ketqua').innerText=("Overweight");
-   else if(bmi > 10 && bmi ==30)
+   else if(bmi > 30 && bmi ==30)
       document.getElementById('ketqua').innerText=("Obese");
    else
       document.getElementById('ketqua').innerText= ("Unvalid");
