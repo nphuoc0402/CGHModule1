@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game hãy đoán thử xem</title>
+    <style>
+        input {
+            font-size: 20px;
+            font weight : bold;
+            margin: 30px 0px 0px 50px;
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Chơi" onclick="playgame()";>
+    <p>Note: Bạn chỉ có 3 lượt đoán.(Nhập số nguyên)</p>
+    <script>
+        function playgame(){
+            let minnumber = parseInt(prompt("Nhập Khoảng số bạn muốn đoán: Từ"));
+            let maxnumber = parseInt(prompt("Nhập Khoảng số bạn muốn đoán: Đến"));
+            rd= Math.floor((Math.random()*(maxnumber-minnumber))+minnumber)
+            alert(rd);
+
+            for(let i=0;i<3;i++){
+            let nhap = parseInt(prompt("Mời Bạn Đoán số"));
+                if (nhap == rd){
+                    alert("Chúc mừng bạn đã đoán chính xác!");
+                    break;
+                }else if(nhap > rd){
+                    alert("Số bạn đoán lơn hơn. Vui lòng nhập lại");
+                    continue;
+                }else {
+                    alert("Số bạn đón nhỏ hơn. Vui lòng nhập lại");
+                    continue;
+                }
+                
+        }
+        
+
+        }
+    </script>
+
+</body>
+</html>
