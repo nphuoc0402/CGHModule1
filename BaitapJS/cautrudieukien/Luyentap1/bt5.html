@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let midTermScore = parseFloat(prompt ("Enter the midTermScore "));
+        let finalScore = parseFloat(prompt ("Enter the finalScore"));
+        let score;
+        if(midTermScore <0 || finalScore< 0){
+            score = (midTermScore + (finalScore*2))/3;
+        }else 
+        {
+            
+            score = "null";
+            }
+        
+
+switch((score <=10)? ((score >=9)? "9": (score >=8)? "8" : (score >=7)? "7" : (score>=5)? "6": (score>=0)? "5": "null") : "null"){
+    
+    case "5":
+        alert("Yếu");
+        break;
+    case "6":
+        alert("Trung binh");
+        break;
+    case "7":
+        alert("Khá");
+        break;
+    case "8":
+        alert("Giỏi");
+        break;
+    case "9":
+        alert("Xuất Sắc");
+        break;
+    default:
+        alert("Giá trị không hợp lệ!");
+        break;
+}
+    </script>
+</body>
+</html>
