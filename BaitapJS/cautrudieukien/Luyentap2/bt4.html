@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The area of rectangle</title>
+</head>
+<body>
+    <script>
+        let width = parseInt(prompt("Enter the width of rectangle"));
+        let height = parseInt(prompt("Enter the height of rectangle"));
+        if(width < 0 || height < 0){
+            alert("Invalid value");
+        }else {
+            let area = width * height;
+            alert(`The area of rectangle is ${area}`);
+        }
+    </script>
+</body>
+</html>

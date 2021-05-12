@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conver °C to °F</title>
+</head>
+<body>
+    <script>
+        let Celsius = parseFloat(prompt("Enter the Degrees Celsius"));
+        let Fahrenheit;
+        if(Celsius < 0){
+            alert("Invalid value. Please enter degrees Celsius again");
+        }else {
+            Fahrenheit = (Celsius*9/5) + 32;
+            alert(`${Fahrenheit}°F`);
+        }
+        
+    </script>
+</body>
+</html>

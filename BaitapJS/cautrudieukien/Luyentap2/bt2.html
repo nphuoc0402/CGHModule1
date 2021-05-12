@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert meter to feet</title>
+</head>
+<body>
+    <script>
+        let meter = parseInt(prompt("Enter the number of meters"));
+        let feet;
+        if(meter<0){
+            alert("Please enter the number of meter again ");
+        }else {
+            feet = meter*3.2808;
+            alert(`${feet} ft`);
+        }
+    </script>
+</body>
+</html>

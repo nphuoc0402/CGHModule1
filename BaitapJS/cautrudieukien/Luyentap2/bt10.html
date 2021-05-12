@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính giá cước tiền điệ<noframes></noframes></title>
+</head>
+<body>
+    <script>
+        let tieuthu = parseInt(prompt("Nhập lượng điện tiêu thụ"));
+        let tong =0;
+        const bac1 = 1.678
+        const bac2 = 1.734;
+        const bac3 = 2.014;
+        const bac4 = 2.536;
+        if(tieuthu>200){
+            tong = (tieuthu-200)*bac4+200*bac3+100*bac2+50*bac1;
+        }else if(tieuthu > 100){
+            tong = (tieuthu - 100)*bac3+100*bac2+50*bac1;
+
+        }else if(tieuthu>50){
+            tong = (tieuthu - 50)*bac2+50*bac1;
+        }else {
+            tong = tieuthu*bac1;
+        }
+        alert(`${tong}đ`);
+    </script>
+</body>
+</html>
