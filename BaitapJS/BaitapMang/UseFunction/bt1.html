@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter the number of Array"))
+        let i=0;
+        let myArray=[];
+        do{ 
+            if(isNaN(n)||n>=0){
+                myArray[i] = prompt(`Enter the Array[${i}]: `);
+                i++;
+                alert(isNaN(n));
+            }else {
+                alert("Please enter the number");
+            }
+            
+        }while(i<n)
+        myArray.join();
+        document.write(myArray);
+    </script>
+</body>
+</html>
