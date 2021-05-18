@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TemperatureConvert</title>
+</head>
+<body>
+    <div>
+        <h3>Temperature Converter</h3>
+        <p>Type a value in the Fahrenheit fied to convert the value to Celcíu</p>
+        <label for="">Fahrenheit</label>
+        <input type="number" id="inputFahrenheit" placeholder="Fahrenheit" oninput="temperatureConverter()">
+        <p>Celsius: <span id="outputCelsius"></span></p>
+    </div>
+    <script>
+        function temperatureConverter(valNum){
+            valNum = document.getElementById('inputFahrenheit').value;
+            document.getElementById('outputCelsius').innerHTML = ((valNum-32) / 1.8).toFixed(4);
+        }
+    </script>
+</body>
+</html>
