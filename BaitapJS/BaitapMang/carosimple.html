@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Caro</title>
+    <style>
+        .container{
+            max-width: 500px;
+            height: 300px;
+            background-color: gray;
+            text-align: center;
+            margin-left: 50px;
+            color: white;
+            
+            
+        }
+       
+        input{
+            color: white;
+            background-color: tomato;
+            border-radius: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <body>
+        <div class="container">
+      <h3>Caro Game Simple</h3>
+      <p id="carogame"></p>
+        </div>
+      <script>
+        let arr=[];
+        let M = parseInt(prompt("Enter the row of Caro"));
+        let N = parseInt(prompt("Enter the col of Caro"));
+        let caro = "";
+        for(let i=0;i<M;i++){
+            arr[i]=[];
+            for(let j=0;j<N;j++){
+                arr[i][j] = 0;
+            }
+        }
+        
+        for(let i=0;i<M;i++){
+            caro+="<br>";
+            for(let j=0;j<N;j++){
+                caro+= arr[i][j] + "&nbsp;&nbsp;&nbsp";
+            }
+        }
+        caro+="<br><br> <input type='button' value='Change Value' onclick='changeValue()'> ";
+        document.getElementById('carogame').innerHTML = caro;
+        function changeValue(){
+            let x = prompt("position X:");
+            let y = prompt("Position Y:");
+            caro = "";
+            arr[x-1][y-1] = "x";
+            for(let i=0;i<M;i++){
+                caro+="<br>";
+                for(let j=0;j<N ;j++){
+                    caro+= arr[i][j] + "&nbsp;&nbsp;&nbsp";
+                }
+            }
+            caro+="<br><br> <input type='button' value='Change Value' onclick='changeValue()'> ";
+        document.getElementById('carogame').innerHTML = caro;
+        }
+      </script>
+    </body>
+  </body>
+</html>
+
