@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập mảng 1: Bài tập 3</title>
+</head>
+<body>
+    <script>
+        let ar = [1,9,24,59,106,4,7,8,12,15];
+        let index = 0;
+        let max = ar[0];
+        let sum =0;
+        let average;
+        for (let i=0;i<10;i++){
+            
+            if(max<ar[i]){
+                max = ar[i];
+               
+            }
+            sum+=ar[i];
+        }
+        average = sum/10;
+        console.log(max,average);
+        
+    </script>
+</body>
+</html>

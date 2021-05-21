@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập mảng 1: Bài tập 5</title>
+</head>
+<body>
+    <script>
+        let count =0;
+        let ar = [];
+        let temp;
+        let max = parseInt(prompt("Enter the max number in array"));
+        let min = parseInt(prompt("Enter the min number in array"));
+        for(let i = 0;i<10;i++){
+            do{
+                temp = Math.floor(Math.random()*(max-min+1)+min);
+            }while (ar.indexOf(temp)!=-1)
+            ar[i] = temp;
+        }
+        // document.write(ar);
+        for(let i=0;i<10;i++){
+            if(ar[i]<0){
+                count++;
+            }
+        }
+        console.log(count);
+    </script>
+</body>
+</html>
