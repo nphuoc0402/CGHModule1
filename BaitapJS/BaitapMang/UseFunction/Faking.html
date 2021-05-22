@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        display: block;
+        margin-top: 0em;
+        margin-block-end: 1em;
+      }
+      .container {
+        text-align: -webkit-center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h2>Typing Anything slowly</h2>
+      </div>
+      <form name="f">
+        <textarea
+          id="input"
+          name="txt"
+          cols="40"
+          rows="10"
+          onkeydown="typeTextarea();"
+        ></textarea>
+      </form>
+    </div>
+    <script>
+      let ar = [
+         "C", "o", "n", " ", "T", "ê", "n", " ","L","à"," ","N","g","u","y","ễ","n"," ","T","h",
+        "ị"," ","T","u", "y","ế","t", " ", "T", "r","i","n","h","!","!",'H','i','ệ','n',' ','t','ạ','i',' ','1','4','t',' ','v','à',' ','đ','a','n','g',' ',
+        'h','ọ','c',' ','t','ạ','i',' ','T','H','C','S',' ','T','R','Ư','Ơ','N','G'," ",'C','Ô','N','G',' ','Đ','Ị','N','H',' ','r','ấ','t',' ','m','o',
+        'n','g',' ', 'đ','ư','ợ','c', ' ','l','à','m',' ','q','u','e','n',' ','v','ớ','i',' ', 'm','ọ','i',' ','n','g','ư','ờ','i'," ",'!'
+      ];
+      var txt = "";
+      function typeTextarea() {
+        let str = document.getElementById("input").value;
+        let len = str.length;
+        // alert(len);
+        if (len > 0) {
+          for (var i = 0; i < len; i++) {
+            txt += ar[i];
+            if (i == 124) {
+              document.getElementById("input").value = "";
+              txt = "";
+            }
+          }
+        }
+        document.getElementById("input").value = txt;
+        txt = "";
+        setTimeout("typeTextarea()", 1);
+      }
+    </script>
+  </body>
+</html>
