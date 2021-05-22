@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập mảng 2: Bài tập 6</title>
+    <style>
+        *,*::after,*::before{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width:  400px;
+            height: 200px;
+            margin: 50px auto;
+            background-color: #54a0ff;
+        }
+        .show{
+            display:table;
+            margin: 20px auto;
+        }
+        input{
+            margin-bottom: 10px;
+            padding: 5px;
+           
+        }
+        [type="button"]{
+            align-items: center;
+            margin-left: 150px;
+        }
+        h3{
+           
+            text-align: center;
+        }
+        #result{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <h3>Change "-" to "_"</h3>
+        </div>
+        <div class="show">
+            <input type="text" id="array"><br>
+            <input type="text" id="changearray" readonly>
+        </div>
+        <div >
+            <input type="button" value="Change Value" onclick="changeValue()">
+        </div>
+        <script>
+            function changeValue(str){
+                let arr = [];
+                str = document.getElementById('array').value;
+                for(let i =0;i<str.length;i++){
+                    arr[i] = str[i];
+                }
+                for(let i= 0;i<str.length;i++){
+                    if(arr[i]=="-"){
+                        arr[i]="_";
+                    }
+                }
+                document.getElementById('changearray').value = arr.join("");
+            }
+        </script>
+
+</body>
+</html>
