@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiểm tra từ đối xứng</title>
+    <style>
+        *,*::after,*::before{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 400px;
+            height: 150px;
+            background-color: aquamarine;
+            text-align: center;
+            margin: 40px auto ;
+            padding: 20px;
+
+        }
+        h3{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        input{
+            margin-bottom: 10px;    
+        }
+        [type="text"]{
+            width: 200px;
+            height: 25px;
+            border-radius:5px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3>Palindrome</h3>
+      </div>
+      <div>
+        <input type="text" id="input" />
+      </div>
+      <div>
+        <input type="button" value="Check" onclick="isPalindrome()" />
+      </div>
+      <div>
+          <p id="display"></p>
+      </div>
+    </div>
+    <script>
+        function isPalindrome(s){
+            s = document.getElementById('input').value;
+            let check=true;
+            
+                if(s[0]===s[s.length-1]){
+                    for(let i=1;i<(s.length-1)/2;i++){
+                        if(s[i]!==s[s.length-i-1]){
+                            check=false;
+                            break;
+                        }
+                }
+            }else {check =false;}
+            if(check && s.length>1){
+                document.getElementById('display').innerHTML = ` Palindrome`;
+            }else {
+                document.getElementById('display').innerHTML = `not Palindrome`;
+            }
+        }
+    </script>
+  </body>
+</html>
