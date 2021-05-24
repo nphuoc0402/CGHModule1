@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .puzzle{
+           
+            background-color: aqua;
+        }
+        #anh{
+            width:fit-content;
+            height: auto;
+            border: 5px solid white;
+            margin: 0px 0px 0px 200px;
+            box-shadow: inset 5px 5px 10px red, inset -5px -5px -10px blue;
+            /* border-color: tomato; */
+            }
+
+        #tranh1{
+            border: 5px solid white;
+            padding: 0px;
+            
+            
+        }
+        #tranh2{
+            border: 5px solid white;
+            padding: 0px;
+        }
+        #tranh3{
+            border: 5px solid white;
+            padding: 0px;
+        }
+        #tranh4{
+            border: 5px solid white;
+            padding: 0px;
+        }
+          
+    </style>
+</head>
+<body class="puzzle">
+    <div  id="anh">
+    <div id="tranh1">
+        <img src="naruto1.png" 
+            style="height: 150px; width: 300px" id="image1" onclick="changeImage1()"  />
+    </div>
+    <div id="tranh2">
+        <img src="kakashi2.png" 
+            style="height: 150px; width: 300px" id="image2" onclick="changeImage2()"  />
+    </div>
+    <div id="tranh3">
+        <img src="naruto3.png" 
+            style="height: 150px; width: 300px" id="image3" onclick="changeImage3()"  />
+    </div>
+    <div id="tranh4">
+        <img src="jiraiya4.jpeg" 
+            style="height: 150px; width: 300px" id="image4" onclick="changeImage4()"  />
+    </div>
+</div>
+    
+    <script src="Puzzle.js"  ></script>
+    
+</body>
+</html>
