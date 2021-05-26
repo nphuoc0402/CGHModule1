@@ -93,7 +93,7 @@ for (let i = 0; i < 30; i++) {
         random_x,
         random_y,
         all_circles[a].x,
-        all_circles[a].ypos
+        all_circles[a].y
       ) -
         radius +
         all_circles[a].radius <
