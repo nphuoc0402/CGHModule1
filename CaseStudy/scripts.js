@@ -15,7 +15,7 @@ const PADDLE_HEIGHT = 100;
 const PADDLE_THINKNESS = 10;
 let Player1Score = 0;
 let Player2Score = 0;
-const WIN_SCORE = 2;
+const WIN_SCORE = 10;
 let showingWinScreen = false;
 function handleMouseClick() {
   container.style.display = 'block';
